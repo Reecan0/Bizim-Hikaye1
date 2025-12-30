@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anılarımız</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="galeri.css">
+</head>
+<body>
+
+    <a href="index.html" class="back-btn">⬅ Geri Dön</a>
+
+    <div class="gallery-header">
+        <h1>En Güzel Anlarımız</h1>
+        <p>Detayları görmek için fotoğraflara tıkla...</p>
+    </div>
+
+    <div class="gallery-container">
+
+        <div class="photo-card" data-description="İlk fotoğrafımız yani en azından benim için öyle o an yanımda yokken hatta 
+        yanımdayken bile özlediğimi hissettim anılarımızın birikmesini istedim fotoğraf çekinmiştik">
+            <img src="img/ilkfotograf.jpeg" alt="Anı 1">
+        </div>
+
+        <div class="photo-card" data-description="Veee uzak mesafemizin başlangıcı Gülsüm okulunu bitirdi.Artık aramızda 305 km vardı
+        o Düzce'de ben ise Kastamonu'da onu tanıdığım günden beri sadece beraber olmak yanında olmak isityordum.
+        Mesafe bizim için bir sorun muydu yoksa imtihan mı zaman gösterecekti.Gülsüm gitmeden önce moral ve teselli için 
+        bir özledim mesajına bakar diyordum ve sanırım benden çok hoşlanmıştı beklediğim mesaj 1 hafta sonra geldi 
+        ve bir bilet alıp yanına gitmiştim şoklar içindeydi ikimizinde ilk defa yaşayacağı anların başlangıcıydı.">
+            <img src="img/ilkdüzce.jpeg" alt="Anı 2">
+        </div>
+
+        <div class="photo-card" data-description="Nisan ayı 2 ayımızdaydık gayet iyi gidiyorduk her şey olması gerektiği gibiydi
+        yani en azında uzak mesafede olması gerektiği kadar muhteşemdi hayatın bizlere ne getireceği belli değil mutluluk
+        ve yaşanan kötü olaylar hayatın gerçeklerine sevgili olarak nasıl bakacağımızı bilmiyorduk ve ilk imtihan bizim 
+        için mesafe iken Gülsüm'ün babası vefaat etmişti sadece Gülsüm için değil benim için bizim için acı bir durumdu
+        derler ya babasıyla nasıl olur aran hayalini kurardık ama bu bizim için yok artık evet birinin vefaat etmesi çok acı 
+        bir durum ama bu da dünyanın bir gerçeği ve yanında olmak istediğim sevgilimin yanına koştum direkt onu yalnız bırakmadım 
+        tabikide bu süreçte canım sevgilim benim seni çok seviyorum.">
+            <img src="img/vefaat.jpeg" alt="Anı 3">
+        </div>
+
+        <div class="photo-card" data-description="Ben her zaman olduğu gibi her ara tatilde yani para kazanmak için 
+        inşaatta çalışıyordum ve nisanın nisan ayının ortalarında tekrar İstanbula'a gitmiştim o süreçte bizim için
+        işten dolayı iletişimsizlik olsada bi şekilde üstesinde geldik ve mayısın 1 inde sevgilime koştum Kastamonu'na 
+        gitmeden uğramıştım en çokta İstanbul Kastamonu otobüsünün Düzceye uğraması onu görmeden gitmek çok koyardı çok 
+        özlemiştim.">
+            <img src="img/istanbuldandönüş.jpeg" alt="Anı 4">
+        </div>
+
+        <div class="photo-card" data-description="Yazın ilk ayrılığımızı yaşadık buraya yazamayacağım kadar buruk bir ayrılıktı
+        zaten 2 ay görüşememiştik üstüne ayrılık şoku aşk gerçekten yanında yakınında olmakmıydı sorguluyorduk sen bende hiç gitmemiştin ki
+        sevgilim sözlerin git dese gözlerin kal diyordu sen bana nasıl git diyebilirdin ki tadsızdı acıydı iletişimsizlik görüşememek
+        yazın çalışmam ve iletişimin zor olduğu bu süreç bize sadece ayrılık getirdi ekstrem kötü olaylar yaşamıştık ama seni sevmekten asla vazgeçmedim
+        sevgilim veee tarih 15 Ekim Gülsüm bana yazdı ve kuruyan ağacın filizlenmesi gibi baharın gelişinin habercisi gibi 
+        içim tekrar onunla dolmuştu 1 hafta sonra 22 Ekimde de yanıma gelmişti ve barışmıştık artık hatalarından ders almış bi ilişkiye devam ediyorduk
+        artık daha az sorunlarımız vardı ve düzeltmiştik her şeyi devamı gelecek sevgilim seni çok seviyorum... ">
+            <img src="img/4aysonrailkgörüş.jpeg" alt="Anı 5">
+        </div>
+
+    </div>
+
+    <div class="footer-note">
+        ❤️ Sonsuza kadar...
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal-overlay" id="memoryModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+
+            <div class="modal-image-container">
+                <img id="modalImg" alt="Büyük Anı">
+            </div>
+
+            <div class="modal-text-container">
+                <h2>O Günün Hikayesi</h2>
+                <p id="modalText"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="galeri.js"></script>
+</body>
+</html>

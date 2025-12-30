@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Glass Card */
+.glass-card {
+    width: 90%;
+    max-width: 1000px;
+    height: 80vh;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+}
+
+/* Left Side */
+.content-side {
+    width: 45%;
+    padding: 50px;
+    color: white;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4.5rem;
+}
+
+.subtitle {
+    margin-bottom: 40px;
+}
+
+/* Timer */
+.timer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.time-box {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.time-val {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Heart */
+.heart-beat {
+     display: inline-block;
+    font-size: 3rem;
+    margin: 30px auto;
+    color: #ff4d6d;
+    animation: beat 1.2s ease-in-out infinite;
+    transform-origin: center;
+}
+
+@keyframes beat {
+     0%   { transform: scale(1); }
+    30%  { transform: scale(1.15); }
+    50%  { transform: scale(1); }
+    70%  { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Button */
+.gallery-btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.gallery-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Photos */
+.photo-side {
+    width: 55%;
+    padding: 20px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    height: 100%;
+}
+
+.photo-item {
+   position: relative;
+    border-radius: inherit;
+    overflow: hidden;
+}
+
+.photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    border: 4px solid white;
+}
+
+.date-text {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+}
