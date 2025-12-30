@@ -116,6 +116,12 @@ body {
     width: 100%;
     display: flex;
     gap: 30px;
+    align-items: flex-start;
+    
+    /* YENİ EKLENEN KISIMLAR */
+    position: relative; /* Çarpı butonu düzgün dursun diye */
+    max-height: 90vh;   /* Ekranın %90'ından daha uzun olmasın */
+    overflow: hidden;   /* Köşelerden taşmayı engelle */
 }
 
 .close-modal {
@@ -141,6 +147,11 @@ body {
 .modal-text-container {
     flex: 1;
     min-width: 300px;
+    
+    /* YENİ EKLENEN KISIMLAR */
+    max-height: 80vh;  /* Yükseklik sınırı (modal-content'ten biraz az olmalı) */
+    overflow-y: auto;  /* Yazı sığmazsa sağda kaydırma çubuğu çıksın */
+    padding-right: 10px; /* Kaydırma çubuğu yazıya yapışmasın */
 }
 #modalText {
     white-space: normal;
